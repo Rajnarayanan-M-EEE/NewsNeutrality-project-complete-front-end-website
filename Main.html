@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+
+        <a href="#" class="aa"> <img src="anin.png" class="logo" style="width: 58px;">New Neutrality</a>
+        <div class="menu-btn"></div>
+        <div class="navi">
+            <div class="navi-item" >
+                <a href="C:\Users\user\Desktop\project\Main.html">Home</a>
+                <a href="C:\Users\user\Desktop\project\Contact.html">Contact</a>
+                <a href="C:\Users\user\Desktop\project\About.html">About</a>
+                <a href="C:\Users\user\Desktop\project\Login.html">Logout</a>
+                
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video" src="newbg.mp4" autoplay muted loop ></video>
+        <div class="content">
+            <h1>Connect With<br><span>Media</span></h1>
+            <p>People can disseminate the latest news from any location through "connect With MEDIA" ensuring news neutrality. This empowers the public to share unbiased information, fostering a transparent and informed society. Connecting with media outlets allows for a diverse and balanced dissemination of news, promoting an environment of credibility and reliability.</p>
+            <button type="button" style="width: 200px;" onclick="document.location='Upload.html'">Upload</button>
+            <button type="button" style="width: 200px; " onclick="document.location='News.html'">News</button>
+        </div>
+        <div class="media-icon">
+           <a href="#"><ion-icon name="logo-facebook" style="color: rgb(0, 140, 255);"></ion-icon></a> 
+           <a href="#"><ion-icon name="logo-youtube" style="color: rgb(255, 9, 9);"></ion-icon></a> 
+           <a href="#"><ion-icon name="logo-instagram" style="color: rgb(240, 33, 188);"></ion-icon></a>
+        </div>
+
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript">
+    const menubtn=document.querySelector(".menu-btn");
+    const navigation=document.querySelector(".navi");
+    menubtn.addEventListener("click",()=>{
+        menubtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+     })
+
+</script>
+
+</body>
+</html>

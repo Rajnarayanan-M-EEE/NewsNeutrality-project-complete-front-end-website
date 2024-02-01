@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+
+        <a href="#" class="aa"> <img src="anin.png" class="logo" style="width: 58px;">New Neutrality</a>
+        <div class="menu-btn"></div>
+        <div class="navi">
+            <div class="navi-item" >
+                <a href="C:\Users\user\Desktop\project\Main.html">Home</a>
+                <a href="C:\Users\user\Desktop\project\Contact.html">Contact</a>
+                <a href="C:\Users\user\Desktop\project\About.html">About</a>
+                <a href="C:\Users\user\Desktop\project\Login.html">Logout</a>
+                
+            </div>
+        </div>
+    </header>
+    <section class="contact">
+        <br><br>
+        <div class="content"> 
+            <h2>Contact Us</h2>
+            <p>Connect with us at email  or call phone number to share your thoughts on News Neutrality. Our dedicated team appreciates your feedback, enhancing our commitment to diverse perspectives.For inquiries about News Neutrality, we welcome your thoughts. Reach out to our dedicated team. We value your perspective.</p>      
+        </div>
+        <div class="container">
+            <div class="contact-info">
+                <div class="box">
+                    <div class="icon"><ion-icon name="navigate-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>4671 Sugar Camp Road,<br>Mysore, Karnataka,<br>342345.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>045-75467898</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><ion-icon name="mail-open-outline"></ion-icon></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>newsneutrality@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Send the Enquiry</h2>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Full Name</span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span>Email</span>
+                </div>
+                <div class="inputbox">
+                    <textarea required="required"></textarea>
+                    <span>Type your message....</span>
+                </div>
+                <div class="inputbox" >
+                    <button type="submit" class="btn" onclick="openPopup()">Send</button>
+                </div>
+                <div class="popup" id="popup">
+                    <img src="tick1.png">
+                    <h2>Thank you</h2>
+                    <p> Your enquiry will be send to the our office. Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <script>
+            let popup=document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("o");
+            }
+            function closePopup(){
+                popup.classList.remove("o");
+            }
+            
+        </script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script type="text/javascript">
+            const menubtn=document.querySelector(".menu-btn");
+            const navigation=document.querySelector(".navi");
+            menubtn.addEventListener("click",()=>{
+                menubtn.classList.toggle("active");
+                navigation.classList.toggle("active");
+             })
+        
+        </script>
+       
+    </section>
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Poppins','sans-serif';
+}
+
+header{
+    z-index:999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5 ease;
+}
+header .aa{
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navi{
+    position: relative;
+}
+header .navi .navi-item a{
+    position: relative;;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:30px ;
+    transition: 0.3s ease;
+}
+header .navi .navi-item a::before{
+    content:'';
+    position: absolute;
+    background: #000000;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navi .navi-item a:hover:before{
+width: 100%;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('luxa.org-opacity-changed-contactbg.jpg') no-repeat;
+
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+.contact .content p{
+    font-weight: 300;
+    color: black;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact-info .box{
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.container .contact-info .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: rgb(179, 176, 176);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    font-size: 32px;
+}
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size:16px ;
+    color: black;
+    flex-direction: column;
+    font-size: 300;
+}
+
+.container .contact-info .box .text h3{
+    font-size:500;
+    color: rgb(5, 104, 66);
+}
+.form{
+    width: 40%;
+    padding: 40px;
+    background: rgb(164, 233, 192);    
+    border-radius: 20px;
+    
+}
+.form h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+.form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.form .inputbox input, .form .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+}
+.form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+.form .inputbox input:focus ~ span,
+.form .inputbox input:valid ~ span,
+.form .inputbox textarea:focus ~ span,
+.form .inputbox textarea:valid ~ span{
+    color: rgb(4, 59, 29);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.form .inputbox .btn{
+    width: 100px;
+    background:  rgb(5, 104, 66);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+ .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: top 0.4s;
+}
+ .o{
+   
+    top: 50%;
+    transform: translate(-50%,-50%);
+   visibility: visible;
+    
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+}
+ .popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+ .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0 ;
+    background:  #6fd649;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+@media (max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contact-info{
+        margin-bottom: 40px;
+    }
+    .container .contact-info, .form{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:1040px){
+    header 
+       {
+        padding: 12px 20px;
+       }
+       section{
+        padding: 100px 20px;
+       }
+       .home .media-icon {
+        right: 15px;
+    }
+    header .navi {
+    display: none;
+    }
+    header .navi.active {
+    
+         position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1,1,1,.05);  
+    }
+    
+    header .navi .navi-item a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    
+    header .navi .navi-item a:before{
+        background:  #222;
+       height: 5px;
+    }
+    header .navi.active .navi-item{
+        background-color: gray;
+        width: 300px;
+        max-width: 300px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        
+        box-shadow: 0 5px 25px rgb(1 1 1 /20%);
+    } 
+    .menu-btn{
+    background: url(menu0.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height:40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+    .menu-btn.active{
+    z-index: 999;
+    background: url(close.png) no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+    }
+    }
+    
+    
